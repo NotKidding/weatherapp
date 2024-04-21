@@ -4,6 +4,8 @@ import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
 import 'package:weather_app/models/weather_model.dart';
 import 'package:weather_app/services/weather_service.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 class WeatherPage extends StatefulWidget {
   const WeatherPage({super.key});
@@ -91,7 +93,7 @@ class _WeatherPageState extends State<WeatherPage> {
           children: [
             const Icon(Icons.fmd_good_rounded, size: 50.0,),
             //city name
-            Text(_weather?.cityName ?? "Loading city...", textScaler: const TextScaler.linear(3), ),
+            Text(_weather?.cityName ?? "Loading city...", textScaler: const TextScaler.linear(3), style: GoogleFonts.alata() ,),
 
 
 
@@ -100,11 +102,11 @@ class _WeatherPageState extends State<WeatherPage> {
 
 
             //temperature
-            Text('${_weather?.temperature.round()}°C', textScaler: const TextScaler.linear(2.5),),
+            Text('${_weather?.temperature.round()}°C', textScaler: const TextScaler.linear(2.5), style: GoogleFonts.alata(),),
 
 
             //weather condition
-            Text(_weather?.mainCondition ?? "", textScaler: TextScaler.linear(1.5),)
+            Text(_weather?.mainCondition ?? "", textScaler: TextScaler.linear(1.5), style: GoogleFonts.alata(),)
 
 
           ],
