@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/pages/theme/theme.dart';
 import 'pages/weather_page.dart';
 
 void main() {
@@ -10,9 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.grey[100]
-      ),
+      theme: lightMode,
+      darkTheme: darkMode,
+      //theme: ThemeData(
+        
+
+        //scaffoldBackgroundColor: Colors.grey[100]
+      //),
       debugShowCheckedModeBanner: false,
       home: WeatherPage(),
     );
