@@ -94,7 +94,7 @@ class _WeatherPageState extends State<WeatherPage> {
           children: [
             const Icon(Icons.fmd_good_rounded, size: 50.0,),
             //city name
-            Text(_weather?.cityName ?? "Loading city...", textScaler: const TextScaler.linear(3), style: GoogleFonts.alata() ,),
+            Text(_weather?.cityName ?? "Loading city...", textScaler: const TextScaler.linear(3), style: GoogleFonts.alata(),),
 
 
 
